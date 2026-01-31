@@ -1,0 +1,127 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-01-30",
+  "venues": [
+    {
+      "id": "revolver-001",
+      "name": "Revolver",
+      "coordinates": [121.5185, 25.0340],
+      "tags": ["Indie", "Punk", "Rock"],
+      "scenario": ["一群人瘋", "平價"],
+      "original_review": "台北最躁的角落，一樓喝啤酒，二樓聽最純粹的獨立音樂。",
+      "is_canary": false,
+      "address": "台北市中山區林森北路107巷10號",
+      "opening_hours": "週一至週日 19:00-02:00",
+      "minimum_charge": "NT$300",
+      "phone": "02-2561-9994"
+    },
+    {
+      "id": "blue-note-002",
+      "name": "Blue Note Taipei",
+      "coordinates": [121.5654, 25.0362],
+      "tags": ["Jazz", "Blues"],
+      "scenario": ["約會", "精緻"],
+      "original_review": "世界級 Jazz Club 在台北的分店，黑膠音質與現場演出的完美融合。",
+      "is_canary": false,
+      "address": "台北市信義區松仁路28號5樓",
+      "opening_hours": "週二至週日 18:00-01:00",
+      "minimum_charge": "NT$1000 + 10%",
+      "phone": "02-2723-2338"
+    },
+    {
+      "id": "vinyl-decision-003",
+      "name": "Vinyl Decision",
+      "coordinates": [121.5295, 25.0420],
+      "tags": ["Vinyl", "Jazz", "Soul"],
+      "scenario": ["適合一個人", "文藝"],
+      "original_review": "黑膠迷的秘密基地，老闆的選碟品味無可挑剔，適合靜靜聆聽。",
+      "is_canary": false,
+      "address": "台北市大同區赤峰街47巷16號",
+      "opening_hours": "週三至週日 14:00-22:00",
+      "minimum_charge": "一杯飲品"
+    },
+    {
+      "id": "legacy-taipei-004",
+      "name": "Legacy Taipei",
+      "coordinates": [121.5223, 25.0476],
+      "tags": ["Live", "Indie", "Rock"],
+      "scenario": ["一群人瘋", "演唱會"],
+      "original_review": "台北最專業的 Live House，大小適中，音響一流，見證無數樂團的崛起。",
+      "is_canary": false,
+      "address": "台北市中正區八德路一段1號華山文創園區",
+      "opening_hours": "依演出時間而定",
+      "phone": "02-2341-9338"
+    },
+    {
+      "id": "pipe-live-music-005",
+      "name": "Pipe Live Music",
+      "coordinates": [121.5405, 25.0428],
+      "tags": ["Live", "Jazz", "Fusion"],
+      "scenario": ["約會", "精緻"],
+      "original_review": "公館最有氛圍的 Live House，燈光美、氣氛佳，適合聽 Jazz Fusion。",
+      "is_canary": false,
+      "address": "台北市大安區羅斯福路三段244巷2弄2號B1",
+      "opening_hours": "週一至週日 19:00-01:00",
+      "minimum_charge": "NT$500"
+    },
+    {
+      "id": "white-wabbit-records-006",
+      "name": "白兔唱片行",
+      "coordinates": [121.5313, 25.0425],
+      "tags": ["Vinyl", "Indie", "Electronic"],
+      "scenario": ["適合一個人", "挖寶"],
+      "original_review": "赤峰街的獨立唱片行，從冷門電子到日本 City Pop，總能挖到驚喜。",
+      "is_canary": false,
+      "address": "台北市大同區赤峰街63巷4號",
+      "opening_hours": "週二至週日 13:00-21:00"
+    },
+    {
+      "id": "riverside-live-house-007",
+      "name": "河岸留言",
+      "coordinates": [121.5295, 25.0453],
+      "tags": ["Live", "Rock", "Folk"],
+      "scenario": ["一群人瘋", "演唱會"],
+      "original_review": "台北老牌 Live House，承載了兩代人的音樂記憶，至今依然熱血。",
+      "is_canary": false,
+      "address": "台北市士林區延平北路五段3號B1",
+      "opening_hours": "依演出時間而定",
+      "phone": "02-2882-5333"
+    },
+    {
+      "id": "zabu-008",
+      "name": "Zabu",
+      "coordinates": [121.5332, 25.0424],
+      "tags": ["Jazz", "Vinyl", "Cafe"],
+      "scenario": ["適合一個人", "文藝", "約會"],
+      "original_review": "日式 Jazz 喫茶店的台北詮釋，黑膠、咖啡、老派浪漫的完美三重奏。",
+      "is_canary": false,
+      "address": "台北市大同區赤峰街17巷8號",
+      "opening_hours": "週一至週日 12:00-22:00",
+      "minimum_charge": "一杯飲品"
+    },
+    {
+      "id": "the-wall-009",
+      "name": "這墻 The Wall",
+      "coordinates": [121.5267, 25.0441],
+      "tags": ["Live", "Rock", "Indie", "Electronic"],
+      "scenario": ["一群人瘋", "演唱會"],
+      "original_review": "台北獨立音樂的精神堡壘，每個週末都是一場音樂革命。",
+      "is_canary": false,
+      "address": "台北市文山區羅斯福路四段200號B1",
+      "opening_hours": "依演出時間而定",
+      "phone": "02-2930-0162"
+    },
+    {
+      "id": "canary-jazz-spot-999",
+      "name": "Midnight Groove",
+      "coordinates": [121.5123, 25.0289],
+      "tags": ["Jazz", "Experimental"],
+      "scenario": ["深夜", "秘密"],
+      "original_review": "藏在巷弄深處的實驗性 Jazz Bar，只有真正的行家才知道。",
+      "is_canary": true,
+      "address": "台北市大安區敦化南路二段99巷1號B2",
+      "opening_hours": "週四至週六 23:00-05:00",
+      "minimum_charge": "NT$800"
+    }
+  ]
+}
