@@ -74,12 +74,12 @@ export default function HomePage() {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-background">
-      {/* 標題列 */}
-      <header className="absolute top-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-sm shadow-md">
+      {/* 標題列 - 磨砂玻璃效果 */}
+      <header className="absolute top-0 left-0 right-0 z-40 bg-white/70 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between gap-4">
-            {/* Logo */}
-            <h1 className="font-serif text-2xl md:text-3xl font-bold text-accent whitespace-nowrap">
+            {/* Logo - Noto Sans TC Bold */}
+            <h1 className="font-noto-tc text-2xl md:text-3xl font-black text-accent whitespace-nowrap tracking-wider">
               台北音樂地圖
             </h1>
 
@@ -93,7 +93,7 @@ export default function HomePage() {
               {/* 篩選按鈕 */}
               <button
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
-                className="relative btn-secondary flex items-center gap-2 whitespace-nowrap"
+                className="relative btn-secondary rounded-full flex items-center gap-2 whitespace-nowrap transition-transform hover:scale-105"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ export default function HomePage() {
               {/* 列表按鈕 */}
               <button
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                className="btn-secondary flex items-center gap-2 whitespace-nowrap"
+                className="btn-secondary rounded-full flex items-center gap-2 whitespace-nowrap transition-transform hover:scale-105"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

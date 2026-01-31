@@ -23,13 +23,13 @@
     @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
   }
 
-  /* 按鈕樣式 */
+  /* 按鈕樣式 - 極簡圓角設計 */
   .btn-primary {
-    @apply bg-accent text-white px-4 py-2 rounded-md hover:bg-accent-dark transition-colors duration-200;
+    @apply bg-accent text-white px-6 py-2.5 rounded-full hover:bg-accent-dark transition-all duration-200 hover:scale-105;
   }
 
   .btn-secondary {
-    @apply bg-white text-accent border border-accent px-4 py-2 rounded-md hover:bg-accent hover:text-white transition-colors duration-200;
+    @apply bg-white/90 text-accent border border-gray-200 px-6 py-2.5 rounded-full hover:bg-accent hover:text-white hover:border-accent transition-all duration-200;
   }
 
   /* 浮動操作按鈕 (FAB) */

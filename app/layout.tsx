@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
+
+const notoSansTC = Noto_Sans_TC({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  variable: "--font-noto-sans-tc",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "台北音樂地圖 | Taipei Music Map",
@@ -14,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW" suppressHydrationWarning>
-      <body className="antialiased" suppressHydrationWarning>
+      <body className={`${notoSansTC.variable} antialiased`} suppressHydrationWarning>
         {children}
       </body>
     </html>

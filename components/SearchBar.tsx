@@ -35,7 +35,7 @@ export default function SearchBar({ onSearch, placeholder = "搜尋店家、流�
           value={query}
           onChange={handleChange}
           placeholder={placeholder}
-          className="input pr-20"
+          className="w-full px-6 py-2.5 pr-20 bg-white/90 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all hover:bg-white"
         />
         {query && (
           <button
