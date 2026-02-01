@@ -65,6 +65,7 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
     venues: Venue[];
     centerCoords: [number, number];
   } | null>(null);
+  const [userLocation, setUserLocation] = useState<{ longitude: number; latitude: number } | null>(null);
 
   // 使用 OpenFreeMap 的免費地圖樣式（文藝感淺色風格）
   const mapStyle = 'https://tiles.openfreemap.org/styles/bright';
@@ -213,6 +214,14 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
     setSpiderfyInfo(null);
   }, []);
 
+  // 處理用戶位置獲取
+  const handleGeolocate = useCallback((e: any) => {
+    setUserLocation({
+      longitude: e.coords.longitude,
+      latitude: e.coords.latitude,
+    });
+  }, []);
+
   // 計算 Spiderfy 位置
   const spiderfyPositions = useMemo(() => {
     if (!spiderfyInfo) return [];
@@ -307,6 +316,22 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
             onVenueClick={handleMarkerClick}
             getMarkerColor={getMarkerColor}
           />
+        )}
+
+        {/* 用戶位置標記（藍色圓點） */}
+        {userLocation && (
+          <Marker
+            longitude={userLocation.longitude}
+            latitude={userLocation.latitude}
+            anchor="center"
+          >
+            <div className="relative">
+              {/* 外圈脈衝動畫 */}
+              <div className="absolute inset-0 bg-blue-400 rounded-full opacity-30 animate-ping" style={{ width: '40px', height: '40px', top: '-20px', left: '-20px' }} />
+              {/* 藍色發光圓點 */}
+              <div className="relative w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-lg" style={{ boxShadow: '0 0 12px rgba(59, 130, 246, 0.8)' }} />
+            </div>
+          </Marker>
         )}
 
         {/* Popup */}
@@ -406,8 +431,7 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
           position="bottom-right"
           positionOptions={{ enableHighAccuracy: true }}
           trackUserLocation={true}
-          showUserLocation={true}
-          showAccuracyCircle={true}
+          onGeolocate={handleGeolocate}
         />
       </MapGL>
     </div>
