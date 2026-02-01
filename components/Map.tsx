@@ -326,10 +326,12 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
             anchor="center"
           >
             <div className="relative">
-              {/* 外圈脈衝動畫 */}
-              <div className="absolute inset-0 bg-blue-400 rounded-full opacity-30 animate-ping" style={{ width: '40px', height: '40px', top: '-20px', left: '-20px' }} />
-              {/* 藍色發光圓點 */}
-              <div className="relative w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-lg" style={{ boxShadow: '0 0 12px rgba(59, 130, 246, 0.8)' }} />
+              {/* 外圈脈衝動畫 - 加強版 */}
+              <div className="absolute inset-0 bg-blue-500 rounded-full opacity-40 animate-ping" style={{ width: '48px', height: '48px', top: '-24px', left: '-24px' }} />
+              {/* 中圈擴散 */}
+              <div className="absolute inset-0 bg-blue-400 rounded-full opacity-20 animate-pulse" style={{ width: '32px', height: '32px', top: '-16px', left: '-16px' }} />
+              {/* 藍色發光圓點 - 加大加亮 */}
+              <div className="relative w-5 h-5 bg-blue-500 rounded-full border-[3px] border-white shadow-xl" style={{ boxShadow: '0 0 20px rgba(59, 130, 246, 1), 0 0 40px rgba(59, 130, 246, 0.5)' }} />
             </div>
           </Marker>
         )}

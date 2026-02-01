@@ -111,7 +111,7 @@ export default function HomePage() {
               {/* 篩選按鈕 */}
               <button
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
-                className="relative btn-secondary rounded-full flex items-center gap-2 whitespace-nowrap transition-transform hover:scale-105 min-h-[44px] min-w-[44px] justify-center"
+                className="relative btn-secondary rounded-full flex items-center gap-2 whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 min-h-[44px] min-w-[44px] justify-center"
                 aria-label="篩選場地"
               >
                 <svg
@@ -137,7 +137,7 @@ export default function HomePage() {
               {/* 列表按鈕 - 僅 MD+ 顯示（行動版用 BottomSheet） */}
               <button
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                className="hidden md:flex btn-secondary rounded-full items-center gap-2 whitespace-nowrap transition-transform hover:scale-105 min-h-[44px] min-w-[44px] justify-center"
+                className="hidden md:flex btn-secondary rounded-full items-center gap-2 whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 min-h-[44px] min-w-[44px] justify-center"
                 aria-label="場地列表"
               >
                 <svg

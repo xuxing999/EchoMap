@@ -154,7 +154,7 @@ export default function BottomSheet({
       {/* 底部抽屜 */}
       <div
         ref={sheetRef}
-        className="fixed left-0 right-0 bottom-0 bg-white rounded-t-3xl shadow-2xl z-[100] md:hidden transition-transform duration-300 ease-out flex flex-col"
+        className="fixed left-0 right-0 bottom-0 bg-white/95 backdrop-blur-md rounded-t-3xl shadow-2xl z-[100] md:hidden transition-transform duration-300 ease-out flex flex-col"
         style={{
           transform: getSheetTransform(),
           maxHeight: '90vh',
@@ -163,7 +163,7 @@ export default function BottomSheet({
         }}
       >
         {/* Sticky 頂部區域：拖曳手把 + 搜尋欄 + 篩選按鈕 */}
-        <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b border-gray-200/50">
+        <div className="sticky top-0 z-20 bg-white/90 backdrop-blur-lg border-b border-gray-200/50">
           {/* 拖曳手把 */}
           <div
             className="flex flex-col items-center pt-3 pb-2"
@@ -188,7 +188,7 @@ export default function BottomSheet({
               {/* 篩選按鈕 */}
               <button
                 onClick={onFilterClick}
-                className="relative flex-shrink-0 bg-white border border-gray-200 rounded-full p-3 hover:bg-gray-50 active:scale-95 transition-all min-h-[48px] min-w-[48px] flex items-center justify-center shadow-sm"
+                className="relative flex-shrink-0 bg-white border border-gray-200 rounded-full p-3 hover:bg-gray-50 active:scale-95 transition-all duration-300 min-h-[48px] min-w-[48px] flex items-center justify-center shadow-md hover:shadow-lg"
                 aria-label="開啟篩選"
                 type="button"
               >

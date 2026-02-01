@@ -33,7 +33,7 @@ export default function VenueCard({ venue, onClick, isSelected, source = 'list' 
         e.stopPropagation();
         onClick?.();
       }}
-      className={`card p-4 cursor-pointer transition-all duration-200 active:scale-98 ${
+      className={`card p-4 cursor-pointer transition-all duration-300 hover:shadow-lg active:scale-[0.98] ${
         isSelected ? 'ring-2 ring-accent shadow-xl' : ''
       }`}
       role="button"
@@ -45,16 +45,16 @@ export default function VenueCard({ venue, onClick, isSelected, source = 'list' 
       </h3>
 
       {/* 標籤 */}
-      <div className="flex flex-wrap gap-1 mb-3">
+      <div className="flex flex-wrap gap-1.5 mb-3">
         {venue.tags.map((tag) => (
-          <span key={tag} className="tag text-xs">
+          <span key={tag} className="inline-block bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-full text-xs font-medium transition-all duration-300">
             {tag}
           </span>
         ))}
         {venue.scenario.slice(0, 2).map((scenario) => (
           <span
             key={scenario}
-            className="inline-block bg-accent-light/10 text-accent-dark px-2 py-1 rounded-full text-xs font-sans"
+            className="inline-block bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full text-xs font-medium transition-all duration-300"
           >
             {scenario}
           </span>
@@ -62,7 +62,7 @@ export default function VenueCard({ venue, onClick, isSelected, source = 'list' 
       </div>
 
       {/* 短評 */}
-      <p className="text-sm text-gray-700 mb-3 line-clamp-2">
+      <p className="text-sm text-gray-600 mb-3 line-clamp-2 leading-relaxed">
         {venue.original_review}
       </p>
 
