@@ -19,11 +19,10 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   openGraph: {
     title: "台北音樂地圖 | 探索城市音樂生活",
     description: "探索台北最精緻的音樂場所：Live House、Jazz Bar、黑膠唱片行與獨立音樂空間。",
-    url: 'http://localhost:3000',
     siteName: '台北音樂地圖',
     locale: 'zh_TW',
     type: 'website',
