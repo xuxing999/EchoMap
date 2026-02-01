@@ -330,14 +330,70 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
                   </span>
                 ))}
               </div>
-              <p className="text-sm text-gray-600 line-clamp-3">
+              <p className="text-sm text-gray-600 line-clamp-3 mb-2">
                 {popupInfo.original_review}
               </p>
               {popupInfo.minimum_charge && (
-                <p className="text-xs text-gray-500 mt-2">
+                <p className="text-xs text-gray-500 mb-2">
                   低消：{popupInfo.minimum_charge}
                 </p>
               )}
+              {popupInfo.phone && (
+                <p className="text-xs text-gray-600 mb-3">
+                  電話：
+                  <a
+                    href={`tel:${popupInfo.phone}`}
+                    className="hover:text-accent transition-colors underline ml-1"
+                  >
+                    {popupInfo.phone}
+                  </a>
+                </p>
+              )}
+
+              {/* 行動按鈕區 */}
+              <div className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-200">
+                {/* 導航按鈕 */}
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${popupInfo.coordinates[1]},${popupInfo.coordinates[0]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-1.5 bg-accent text-white px-3 py-2 rounded-full hover:bg-accent-dark active:scale-95 transition-all text-xs font-medium"
+                  aria-label="開啟導航"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span>導航</span>
+                </a>
+
+                {/* 電話按鈕 */}
+                {popupInfo.phone && (
+                  <a
+                    href={`tel:${popupInfo.phone}`}
+                    className="flex-1 flex items-center justify-center gap-1.5 bg-white border-2 border-accent text-accent px-3 py-2 rounded-full hover:bg-accent hover:text-white active:scale-95 transition-all text-xs font-medium"
+                    aria-label="撥打電話"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>電話</span>
+                  </a>
+                )}
+              </div>
             </div>
           </Popup>
         )}
