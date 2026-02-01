@@ -37,11 +37,12 @@ export default function FilterPanel({ filter, onFilterChange }: FilterPanelProps
     <div className="p-4 space-y-6">
       {/* 標題與清除按鈕 */}
       <div className="flex items-center justify-between">
-        <h2 className="font-serif text-2xl text-accent">篩選條件</h2>
+        <h2 className="font-serif text-xl sm:text-2xl text-accent">篩選條件</h2>
         {hasActiveFilters && (
           <button
             onClick={clearFilters}
-            className="text-sm text-gray-500 hover:text-accent transition-colors"
+            className="text-sm text-gray-500 hover:text-accent transition-colors min-h-[44px] px-2 active:scale-95"
+            type="button"
           >
             清除全部
           </button>
@@ -58,11 +59,12 @@ export default function FilterPanel({ filter, onFilterChange }: FilterPanelProps
               <button
                 key={tag}
                 onClick={() => toggleTag(tag, 'tags')}
-                className={`px-4 py-2 rounded-full text-sm font-sans transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm font-sans transition-all duration-200 min-h-[44px] active:scale-95 ${
                   isActive
                     ? 'bg-accent text-white shadow-md'
                     : 'bg-white text-accent border border-accent/30 hover:border-accent'
                 }`}
+                type="button"
               >
                 {tag}
               </button>
@@ -81,11 +83,12 @@ export default function FilterPanel({ filter, onFilterChange }: FilterPanelProps
               <button
                 key={tag}
                 onClick={() => toggleTag(tag, 'scenario')}
-                className={`px-4 py-2 rounded-full text-sm font-sans transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm font-sans transition-all duration-200 min-h-[44px] active:scale-95 ${
                   isActive
                     ? 'bg-accent text-white shadow-md'
                     : 'bg-white text-accent border border-accent/30 hover:border-accent'
                 }`}
+                type="button"
               >
                 {tag}
               </button>

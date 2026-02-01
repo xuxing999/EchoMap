@@ -10,12 +10,23 @@ interface VenueCardProps {
 }
 
 export default function VenueCard({ venue, onClick, isSelected }: VenueCardProps) {
+  const handleClick = (e: React.MouseEvent | React.TouchEvent) => {
+    e.stopPropagation();
+    onClick?.();
+  };
+
   return (
     <div
-      onClick={onClick}
-      className={`card p-4 cursor-pointer transition-all duration-200 ${
+      onClick={handleClick}
+      onTouchEnd={(e) => {
+        e.stopPropagation();
+        onClick?.();
+      }}
+      className={`card p-4 cursor-pointer transition-all duration-200 active:scale-98 ${
         isSelected ? 'ring-2 ring-accent shadow-xl' : ''
       }`}
+      role="button"
+      tabIndex={0}
     >
       {/* 店名 */}
       <h3 className="font-serif text-xl font-bold text-accent mb-2">

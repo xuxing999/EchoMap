@@ -35,13 +35,15 @@ export default function SearchBar({ onSearch, placeholder = "搜尋店家、流�
           value={query}
           onChange={handleChange}
           placeholder={placeholder}
-          className="w-full px-6 py-2.5 pr-20 bg-white/90 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all hover:bg-white"
+          className="w-full px-4 sm:px-6 py-2.5 pr-16 sm:pr-20 bg-white/90 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all hover:bg-white text-base"
+          style={{ fontSize: '16px' }}
         />
         {query && (
           <button
             type="button"
             onClick={handleClear}
-            className="absolute right-12 top-1/2 -translate-y-1/2 text-gray-400 hover:text-accent transition-colors"
+            className="absolute right-10 sm:right-12 top-1/2 -translate-y-1/2 text-gray-400 hover:text-accent transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+            aria-label="清除搜尋"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +61,8 @@ export default function SearchBar({ onSearch, placeholder = "搜尋店家、流�
         )}
         <button
           type="submit"
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-accent hover:text-accent-dark transition-colors"
+          className="absolute right-0 sm:right-1 top-1/2 -translate-y-1/2 text-accent hover:text-accent-dark transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+          aria-label="搜尋"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

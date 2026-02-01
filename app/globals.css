@@ -76,6 +76,15 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  /* 觸控反饋 */
+  .active\:scale-98:active {
+    transform: scale(0.98);
+  }
+
+  .active\:scale-95:active {
+    transform: scale(0.95);
+  }
 }
 
 /* MapLibre GL 樣式覆蓋 */
@@ -95,4 +104,80 @@
 
 .maplibregl-ctrl-group button {
   @apply hover:bg-accent/10;
+}
+
+/* 隱藏 cooperativeGestures 提示圖示 */
+.maplibregl-cooperative-gesture-screen {
+  display: none !important;
+}
+
+.maplibregl-ctrl-attrib-button {
+  display: none !important;
+}
+
+/* 聚合點樣式 */
+.cluster-marker {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.cluster-marker:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* 脈衝動畫（慢速） */
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  75%, 100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+.animate-ping-slow {
+  animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Spiderfy 彈入動畫 */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.5s cubic-bezier(0.36, 0, 0.66, -0.56);
+}
+
+/* Spiderfy 標記容器 */
+.spiderfy-marker-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Spiderfy 連線樣式 */
+.spiderfy-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  transition: all 0.3s ease;
 }

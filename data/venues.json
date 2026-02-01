@@ -1,26 +1,45 @@
 {
-  "version": "1.0.0",
-  "last_updated": "2026-01-30",
+  "version": "2.0.0",
+  "last_updated": "2026-02-01",
   "venues": [
     {
       "id": "revolver-001",
       "name": "Revolver",
-      "coordinates": [121.5185, 25.0340],
-      "tags": ["Indie", "Punk", "Rock"],
-      "scenario": ["一群人瘋", "平價"],
-      "original_review": "台北最躁的角落，一樓喝啤酒，二樓聽最純粹的獨立音樂。",
+      "coordinates": [
+        121.5216797077959,
+        25.03503320437555
+      ],
+      "tags": [
+        "龐克",
+        "重金屬",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "台北最具國際氛圍的音樂酒吧，一樓小酌、二樓看演出，各國樂迷雲集，曲風涵蓋重金屬到電子。",
       "is_canary": false,
-      "address": "台北市中山區林森北路107巷10號",
-      "opening_hours": "週一至週日 19:00-02:00",
-      "minimum_charge": "NT$300",
-      "phone": "02-2561-9994"
+      "address": "台北市中正區羅斯福路一段1-1號",
+      "opening_hours": "18:30–02:00（週末至03:00）",
+      "minimum_charge": "一樓低消一杯飲料；二樓演出門票約 NT$300-500",
+      "phone": "02-3393-1678"
     },
     {
       "id": "blue-note-002",
       "name": "Blue Note Taipei",
-      "coordinates": [121.5654, 25.0362],
-      "tags": ["Jazz", "Blues"],
-      "scenario": ["約會", "精緻"],
+      "coordinates": [
+        121.5654,
+        25.0362
+      ],
+      "tags": [
+        "Jazz",
+        "Blues"
+      ],
+      "scenario": [
+        "約會",
+        "精緻"
+      ],
       "original_review": "世界級 Jazz Club 在台北的分店，黑膠音質與現場演出的完美融合。",
       "is_canary": false,
       "address": "台北市信義區松仁路28號5樓",
@@ -31,21 +50,42 @@
     {
       "id": "vinyl-decision-003",
       "name": "Vinyl Decision",
-      "coordinates": [121.5295, 25.0420],
-      "tags": ["Vinyl", "Jazz", "Soul"],
-      "scenario": ["適合一個人", "文藝"],
-      "original_review": "黑膠迷的秘密基地，老闆的選碟品味無可挑剔，適合靜靜聆聽。",
+      "coordinates": [
+        121.50214502134678,
+        25.03214335241502
+      ],
+      "tags": [
+        "西洋老歌",
+        "藍調搖滾",
+        "黑膠唱片"
+      ],
+      "scenario": [
+        "挖寶",
+        "適合一個人"
+      ],
+      "original_review": "充滿英倫風格的黑膠酒吧咖啡廳，收藏數千張西洋老唱片，老闆本身就是音樂活百科。",
       "is_canary": false,
-      "address": "台北市大同區赤峰街47巷16號",
-      "opening_hours": "週三至週日 14:00-22:00",
-      "minimum_charge": "一杯飲品"
+      "address": "台北市萬華區西源路二段225巷10號",
+      "opening_hours": "12:00–20:00（週末至21:00，週一、二公休）",
+      "minimum_charge": "低消 NT$150，黑膠販售價格透明",
+      "phone": "02-2308-2966"
     },
     {
       "id": "legacy-taipei-004",
       "name": "Legacy Taipei",
-      "coordinates": [121.5223, 25.0476],
-      "tags": ["Live", "Indie", "Rock"],
-      "scenario": ["一群人瘋", "演唱會"],
+      "coordinates": [
+        121.5223,
+        25.0476
+      ],
+      "tags": [
+        "Live",
+        "Indie",
+        "Rock"
+      ],
+      "scenario": [
+        "一群人瘋",
+        "演唱會"
+      ],
       "original_review": "台北最專業的 Live House，大小適中，音響一流，見證無數樂團的崛起。",
       "is_canary": false,
       "address": "台北市中正區八德路一段1號華山文創園區",
@@ -55,21 +95,42 @@
     {
       "id": "pipe-live-music-005",
       "name": "Pipe Live Music",
-      "coordinates": [121.5405, 25.0428],
-      "tags": ["Live", "Jazz", "Fusion"],
-      "scenario": ["約會", "精緻"],
-      "original_review": "公館最有氛圍的 Live House，燈光美、氣氛佳，適合聽 Jazz Fusion。",
+      "coordinates": [
+        121.51399897357057,
+        25.036181261330295
+      ],
+      "tags": [
+        "電子音樂",
+        "嘻哈",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "由百年抽水機房改建而成，位於公館水岸旁，擁有獨特的工業廢墟感，常舉辦電子與地下音樂派對。",
       "is_canary": false,
-      "address": "台北市大安區羅斯福路三段244巷2弄2號B1",
-      "opening_hours": "週一至週日 19:00-01:00",
-      "minimum_charge": "NT$500"
+      "address": "台北市中正區思源街1號（公館水岸廣場）",
+      "opening_hours": "依演出時間而定，週末多為深夜電子派對",
+      "minimum_charge": "門票制，依活動約 NT$400-800",
+      "phone": "02-2365-7167"
     },
     {
       "id": "white-wabbit-records-006",
       "name": "白兔唱片行",
-      "coordinates": [121.5313, 25.0425],
-      "tags": ["Vinyl", "Indie", "Electronic"],
-      "scenario": ["適合一個人", "挖寶"],
+      "coordinates": [
+        121.5313,
+        25.0425
+      ],
+      "tags": [
+        "Vinyl",
+        "Indie",
+        "Electronic"
+      ],
+      "scenario": [
+        "適合一個人",
+        "挖寶"
+      ],
       "original_review": "赤峰街的獨立唱片行，從冷門電子到日本 City Pop，總能挖到驚喜。",
       "is_canary": false,
       "address": "台北市大同區赤峰街63巷4號",
@@ -78,9 +139,19 @@
     {
       "id": "riverside-live-house-007",
       "name": "河岸留言",
-      "coordinates": [121.5295, 25.0453],
-      "tags": ["Live", "Rock", "Folk"],
-      "scenario": ["一群人瘋", "演唱會"],
+      "coordinates": [
+        121.5295,
+        25.0453
+      ],
+      "tags": [
+        "Live",
+        "Rock",
+        "Folk"
+      ],
+      "scenario": [
+        "一群人瘋",
+        "演唱會"
+      ],
       "original_review": "台北老牌 Live House，承載了兩代人的音樂記憶，至今依然熱血。",
       "is_canary": false,
       "address": "台北市士林區延平北路五段3號B1",
@@ -90,9 +161,20 @@
     {
       "id": "zabu-008",
       "name": "Zabu",
-      "coordinates": [121.5332, 25.0424],
-      "tags": ["Jazz", "Vinyl", "Cafe"],
-      "scenario": ["適合一個人", "文藝", "約會"],
+      "coordinates": [
+        121.5332,
+        25.0424
+      ],
+      "tags": [
+        "Jazz",
+        "Vinyl",
+        "Cafe"
+      ],
+      "scenario": [
+        "適合一個人",
+        "文藝",
+        "約會"
+      ],
       "original_review": "日式 Jazz 喫茶店的台北詮釋，黑膠、咖啡、老派浪漫的完美三重奏。",
       "is_canary": false,
       "address": "台北市大同區赤峰街17巷8號",
@@ -102,9 +184,20 @@
     {
       "id": "the-wall-009",
       "name": "這墻 The Wall",
-      "coordinates": [121.5267, 25.0441],
-      "tags": ["Live", "Rock", "Indie", "Electronic"],
-      "scenario": ["一群人瘋", "演唱會"],
+      "coordinates": [
+        121.5267,
+        25.0441
+      ],
+      "tags": [
+        "Live",
+        "Rock",
+        "Indie",
+        "Electronic"
+      ],
+      "scenario": [
+        "一群人瘋",
+        "演唱會"
+      ],
       "original_review": "台北獨立音樂的精神堡壘，每個週末都是一場音樂革命。",
       "is_canary": false,
       "address": "台北市文山區羅斯福路四段200號B1",
@@ -112,11 +205,1811 @@
       "phone": "02-2930-0162"
     },
     {
+      "id": "legacytaipei傳音樂展演空間-020",
+      "name": "Legacy Taipei 傳 音樂展演空間",
+      "coordinates": [
+        121.51978572438391,
+        25.036645753759036
+      ],
+      "tags": [
+        "獨立搖滾",
+        "流行",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "位於華山文創園區內的指標性場館，是台北中型演出首選，音響設備與舞台視野均為頂尖水準。",
+      "is_canary": false,
+      "address": "台北市中正區八德路一段1號（華山1914文化創意產業園區中5A館）",
+      "opening_hours": "依活動演出時間而定（通常 19:00 開演）",
+      "minimum_charge": "門票制，視演出項目約 NT$600 - NT$2500",
+      "phone": "02-2395-6660"
+    },
+    {
+      "id": "thewalllivehouse-022",
+      "name": "The Wall Live House",
+      "coordinates": [
+        121.56788441056699,
+        24.989891932572675
+      ],
+      "tags": [
+        "獨立搖滾",
+        "後搖",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "隱身公館地下室的搖滾殿堂，培育無數獨立樂團，氛圍迷幻且具原始爆發力，聽團仔的必朝聖地。",
+      "is_canary": false,
+      "address": "台北市文山區羅斯福路四段200號B1",
+      "opening_hours": "依演出時間而定，酒吧區週五、六營業至凌晨",
+      "minimum_charge": "門票制，平均消費 NT$500 - NT$1200",
+      "phone": "02-2930-0162"
+    },
+    {
+      "id": "bluenotetaipei台北藍調-024",
+      "name": "Blue Note Taipei 台北藍調",
+      "coordinates": [
+        121.54285207596465,
+        25.0271275015354
+      ],
+      "tags": [
+        "爵士樂",
+        "Live House"
+      ],
+      "scenario": [
+        "約會",
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "1974年成立至今的爵士傳奇，空間充滿懷舊氣息，每晚皆有高水準的爵士樂現場即興演出。",
+      "is_canary": false,
+      "address": "台北市大安區羅斯福路三段171號4樓",
+      "opening_hours": "19:00–00:00",
+      "minimum_charge": "低消一杯飲料加門票費用，平均消費 NT$500",
+      "phone": "02-2362-2333"
+    },
+    {
+      "id": "thtrecordstht唱片-026",
+      "name": "THT Records THT 唱片",
+      "coordinates": [
+        121.53797733618997,
+        25.060705968742464
+      ],
+      "tags": [
+        "黑膠唱片",
+        "靈魂樂",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "挖寶",
+        "適合一個人"
+      ],
+      "original_review": "結合黑膠唱片、咖啡與酒吧的複合式空間，二樓收藏豐富，是音樂挖掘者與創意人的聚會所。",
+      "is_canary": false,
+      "address": "台北市中山區興安街10-2號",
+      "opening_hours": "14:00–21:00（週五、六至00:00，週一、二公休）",
+      "minimum_charge": "低消一杯飲料約 NT$150 - NT$250",
+      "phone": "02-2509-5933"
+    },
+    {
+      "id": "whiterabbitrecords小白-028",
+      "name": "White Rabbit Records 小白兔唱片",
+      "coordinates": [
+        121.54241160423778,
+        25.023719808972245
+      ],
+      "tags": [
+        "獨立音樂",
+        "後搖",
+        "黑膠唱片行"
+      ],
+      "scenario": [
+        "適合一個人",
+        "文藝"
+      ],
+      "original_review": "台灣獨立音樂重要推手，專精代理各國後搖、環境音樂，店內可試聽，店員專業度極高。",
+      "is_canary": false,
+      "address": "台北市大安區羅斯福路三段283巷21弄6號",
+      "opening_hours": "14:00–22:00",
+      "minimum_charge": "自由參觀，黑膠/CD 購買 NT$500 起",
+      "phone": "02-2369-7915"
+    },
+    {
+      "id": "sappholivejazz-030",
+      "name": "Sappho Live Jazz",
+      "coordinates": [
+        121.50051009215518,
+        25.036805819942487
+      ],
+      "tags": [
+        "爵士",
+        "藍調",
+        "Live House"
+      ],
+      "scenario": [
+        "約會",
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "台北頂尖爵士樂現場，遷至萬華新址後環境更加優雅，是專業樂手與深度爵士迷的集散地。",
+      "is_canary": false,
+      "address": "台北市萬華區漢口街二段42巷2號B1",
+      "opening_hours": "19:30–00:30（週末至01:30，週一、二公休）",
+      "minimum_charge": "門票 NT$300-500（可抵部分飲料費用）",
+      "phone": "02-2581-9874"
+    },
+    {
+      "id": "witchhouse女巫店-032",
+      "name": "Witch House 女巫店",
+      "coordinates": [
+        121.54029222311915,
+        25.02790502322568
+      ],
+      "tags": [
+        "民謠",
+        "獨立創作",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "台北民謠與獨立創作人的搖籃，充滿女性自主意識，環境溫馨且帶有古怪趣味，音樂性強烈。",
+      "is_canary": false,
+      "address": "台北市大安區新生南路三段56巷7號",
+      "opening_hours": "11:00–00:00（演出多在 21:00）",
+      "minimum_charge": "低消一杯飲料，演出門票約 NT$350-500",
+      "phone": "02-2362-5494"
+    },
+    {
+      "id": "venue024-034",
+      "name": "個體戶唱片行 Indimusic Records",
+      "coordinates": [
+        121.54308552375115,
+        25.02777971963177
+      ],
+      "tags": [
+        "重金屬",
+        "古董黑膠",
+        "唱片行"
+      ],
+      "scenario": [
+        "挖寶",
+        "適合一個人",
+        "文藝"
+      ],
+      "original_review": "公館地區老字號二手唱片行，專精於金屬、搖滾與日系獨立音樂，挖掘稀有絕版 CD 的寶庫。",
+      "is_canary": false,
+      "address": "台北市大安區羅斯福路三段297-5號3樓",
+      "opening_hours": "12:30–21:00",
+      "minimum_charge": "自由參觀，二手 CD/黑膠 NT$100 起",
+      "phone": "02-2369-6336"
+    },
+    {
+      "id": "waitingroom-036",
+      "name": "Waiting Room",
+      "coordinates": [
+        121.51567607966125,
+        25.035012165325274
+      ],
+      "tags": [
+        "實驗音樂",
+        "獨立文化",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "結合服飾與獨立唱片的時髦空間，品味獨特，選品涵蓋實驗、龐克與世界音樂，氛圍極致 Chill。",
+      "is_canary": false,
+      "address": "台北市中正區長安西路40巷10弄1號",
+      "opening_hours": "14:00–21:00（週一公休）",
+      "minimum_charge": "自由參觀，飲品約 NT$150",
+      "phone": "02-2523-6937"
+    },
+    {
+      "id": "doublecheck-038",
+      "name": "Double Check",
+      "coordinates": [
+        121.54240634645801,
+        25.02622228400505
+      ],
+      "tags": [
+        "環境音樂",
+        "電子",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "精緻",
+        "適合一個人",
+        "一群人瘋"
+      ],
+      "original_review": "強調「聆聽文化」的音樂休息室，需脫鞋進入，配備頂級音響，不定期舉辦黑膠交流與 DJ 演出。",
+      "is_canary": false,
+      "address": "台北市大安區復興南路一段107巷5弄16號",
+      "opening_hours": "19:00–01:00（週末至02:00）",
+      "minimum_charge": "門票含一杯飲料約 NT$500",
+      "phone": "02-2778-3385"
+    },
+    {
+      "id": "venue030-040",
+      "name": "河岸留言西門紅樓展演館",
+      "coordinates": [
+        121.49598109103479,
+        25.036092747795053
+      ],
+      "tags": [
+        "流行搖滾",
+        "全曲風",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "台北歷史悠久的音樂重鎮，位於西門紅樓古蹟內，是大、小樂團展示現場實力的關鍵舞台。",
+      "is_canary": false,
+      "address": "台北市萬華區西寧南路177號",
+      "opening_hours": "依演出時間而定，通常 19:00 開放進場",
+      "minimum_charge": "門票制，平均 NT$400-700",
+      "phone": "02-2370-8805"
+    },
+    {
+      "id": "venue032-042",
+      "name": "榕 RON Xinyi",
+      "coordinates": [
+        121.56516038131204,
+        25.035346761540175
+      ],
+      "tags": [
+        "獨立音樂",
+        "都會",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "融合老屋元素與當代音樂氛圍，不僅調酒出色，選樂風格也深受城市文青喜愛。",
+      "is_canary": false,
+      "address": "台北市信義區信義路四段442號",
+      "opening_hours": "19:00–03:00",
+      "minimum_charge": "平均消費 NT$500 - NT$800",
+      "phone": "02-2720-0026"
+    },
+    {
+      "id": "legacytera-044",
+      "name": "Legacy TERA",
+      "coordinates": [
+        121.61155166063837,
+        25.056051917840065
+      ],
+      "tags": [
+        "流行演出",
+        "國際巡演",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "位於台北流行音樂中心旁，最新的現代化中大型場館，提供極致音效體驗與大型跨國巡演空間。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流園區）",
+      "opening_hours": "依演出時間而定",
+      "minimum_charge": "門票制，NT$800 - NT$3800 不等",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "venue036-046",
+      "name": "佳佳唱片 漢口店",
+      "coordinates": [
+        121.49895663478343,
+        25.03466320303808
+      ],
+      "tags": [
+        "流行",
+        "古典",
+        "唱片行"
+      ],
+      "scenario": [
+        "挖寶",
+        "精緻",
+        "適合一個人"
+      ],
+      "original_review": "1976年創立的指標性唱片行，台北最齊全的實體音樂庫，各類進口盤與稀有盤都能在此挖寶。",
+      "is_canary": false,
+      "address": "台北市萬華區漢口街一段3號",
+      "opening_hours": "10:30–22:30",
+      "minimum_charge": "自由參觀，CD 平均 NT$400 起",
+      "phone": "02-2311-0968"
+    },
+    {
+      "id": "mmrecords四樓唱片行-048",
+      "name": "M@M RECORDS 四樓唱片行",
+      "coordinates": [
+        121.54666860098678,
+        25.024542049752657
+      ],
+      "tags": [
+        "電子音樂",
+        "Techno",
+        "黑膠唱片行"
+      ],
+      "scenario": [
+        "適合一個人",
+        "一群人瘋"
+      ],
+      "original_review": "DJ 與電音迷的聖地，主攻電子音樂、地下舞曲與各類限量 12 吋單曲黑膠，音樂品味極尖端。",
+      "is_canary": false,
+      "address": "台北市大安區忠孝東路四段112號4樓之3",
+      "opening_hours": "15:00–21:00（週一、二公休）",
+      "minimum_charge": "自由參觀，黑膠購買為主",
+      "phone": "02-8771-5688"
+    },
+    {
+      "id": "venue040-050",
+      "name": "古殿樂藏 Classical Palace",
+      "coordinates": [
+        121.50368677082054,
+        25.13023119356046
+      ],
+      "tags": [
+        "古典",
+        "爵士",
+        "古董黑膠"
+      ],
+      "scenario": [
+        "約會",
+        "精緻",
+        "適合一個人"
+      ],
+      "original_review": "預約制的高端黑膠賞析空間，專精於古典音樂、爵士歷史與高傳真音響體驗，如同私人音樂圖書館。",
+      "is_canary": false,
+      "address": "台北市北投區仙渡路一段169號2樓",
+      "opening_hours": "預約制，依時段開放",
+      "minimum_charge": "入內費 NT$300（含基礎導聆與清潔費）",
+      "phone": "0975-057-467"
+    },
+    {
+      "id": "venue042-052",
+      "name": "阿通伯樂器 ATB Music",
+      "coordinates": [
+        121.51556105501595,
+        25.03189334564763
+      ],
+      "tags": [
+        "樂器行",
+        "練團室",
+        "搖滾"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "中正區老牌樂器行，除了買賣吉他、鼓組，更具備專業練團室與錄音空間，是樂手的聚落中心。",
+      "is_canary": false,
+      "address": "台北市中正區和平西路二段100號",
+      "opening_hours": "12:00–22:00",
+      "minimum_charge": "樂器販售/練團室租借平均 NT$400/hr",
+      "phone": "02-2301-2000"
+    },
+    {
+      "id": "venue044-054",
+      "name": "潮電 Bar & Record Store",
+      "coordinates": [
+        121.5465989763842,
+        25.027436340687075
+      ],
+      "tags": [
+        "電子音樂",
+        "House",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "精緻",
+        "適合一個人",
+        "一群人瘋"
+      ],
+      "original_review": "極具未來感的電音主題酒吧，牆面佈滿精選黑膠，提供頂級音效與專業 DJ 演出，是深夜最潮去處。",
+      "is_canary": false,
+      "address": "台北市大安區忠孝東路四段205巷7弄11號",
+      "opening_hours": "20:00–02:00（週末至03:00）",
+      "minimum_charge": "低消一杯飲料 NT$350 起",
+      "phone": "02-2775-5555"
+    },
+    {
+      "id": "marsalishometaipei-056",
+      "name": "Marsalis Home Taipei",
+      "coordinates": [
+        121.56451829635395,
+        25.033661992070197
+      ],
+      "tags": [
+        "爵士樂",
+        "高質感",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "約會",
+        "精緻",
+        "一群人瘋"
+      ],
+      "original_review": "隱身信義區百貨旁的高端爵士酒吧，裝潢充滿大亨小傳感，提供頂級威士忌與專業爵士四重奏演出。",
+      "is_canary": false,
+      "address": "台北市信義區松仁路90號3樓",
+      "opening_hours": "19:00–02:00",
+      "minimum_charge": "低消 NT$800，含專業現場演出費",
+      "phone": "02-8780-1282"
+    },
+    {
+      "id": "venue048-058",
+      "name": "杰克音樂 Jack's Studio",
+      "coordinates": [
+        121.50345468012915,
+        25.03151005160627
+      ],
+      "tags": [
+        "重金屬",
+        "流行搖滾",
+        "樂器行"
+      ],
+      "scenario": [
+        "演唱會"
+      ],
+      "original_review": "西門町重要的地下音樂訓練場，具備專業舞台可舉辦小型成果發表，樂器買賣與維修亦十分專業。",
+      "is_canary": false,
+      "address": "台北市萬華區昆明街76號B1",
+      "opening_hours": "10:00–23:00",
+      "minimum_charge": "練團約 NT$350-600/hr，活動門票約 NT$300",
+      "phone": "02-2381-0999"
+    },
+    {
+      "id": "venue050-060",
+      "name": "向日文創 Music Bar",
+      "coordinates": [
+        121.49856756082161,
+        25.03228484976103
+      ],
+      "tags": [
+        "流行民謠",
+        "Open Mic",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "溫馨的小型音樂空間，常有素人 Open Mic 與駐唱歌手，是發掘潛力新聲的好地方。",
+      "is_canary": false,
+      "address": "台北市萬華區艋舺大道120巷10號1樓",
+      "opening_hours": "18:00–00:00（週一、四 Open Mic）",
+      "minimum_charge": "低消一杯飲料約 NT$200",
+      "phone": "0911-468-625"
+    },
+    {
+      "id": "venue052-062",
+      "name": "小宋唱片 Xiao Song Records",
+      "coordinates": [
+        121.49521297035155,
+        25.03506638837767
+      ],
+      "tags": [
+        "經典黑膠",
+        "全曲風",
+        "唱片行"
+      ],
+      "scenario": [
+        "挖寶",
+        "適合一個人"
+      ],
+      "original_review": "黑膠迷必訪的聖殿，收藏量驚人且整理細緻，無論是經典名盤或絕版逸品都能在此找到。",
+      "is_canary": false,
+      "address": "台北市萬華區西園路二段225巷10號",
+      "opening_hours": "10:00–20:00（週日公休）",
+      "minimum_charge": "自由參觀，黑膠 NT$300 起",
+      "phone": "02-2308-2966"
+    },
+    {
+      "id": "mkcrattmc山形咖啡-064",
+      "name": "MKCR at TMC (山形咖啡)",
+      "coordinates": [
+        121.60675393650774,
+        25.055911966211422
+      ],
+      "tags": [
+        "流行文化",
+        "精緻咖啡",
+        "音樂氛圍"
+      ],
+      "scenario": [
+        "約會",
+        "文藝"
+      ],
+      "original_review": "位於北流文化館，將咖啡美學與流行音樂結合，落地窗採光極佳，是看展後休息聆聽音樂的首選。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流文化館1樓）",
+      "opening_hours": "10:00–18:00（週一公休）",
+      "minimum_charge": "低消一份品項約 NT$150-250",
+      "phone": "02-2785-5555"
+    },
+    {
+      "id": "venue056-066",
+      "name": "95樂府",
+      "coordinates": [
+        121.5019268196412,
+        25.03599439904311
+      ],
+      "tags": [
+        "日韓流行",
+        "動漫",
+        "唱片行"
+      ],
+      "scenario": [
+        "挖寶"
+      ],
+      "original_review": "台北最強日韓音樂、ACG、動漫唱片代購站，無論是日本地下偶像或流行天團的週邊一應俱全。",
+      "is_canary": false,
+      "address": "台北市萬華區漢口街二段20巷11號",
+      "opening_hours": "12:00–20:00",
+      "minimum_charge": "商品零售，依代購匯率定價",
+      "phone": "02-2312-2251"
+    },
+    {
+      "id": "venue058-068",
+      "name": "搖滾帝國 Metal Gate",
+      "coordinates": [
+        121.51446048783896,
+        25.03501416258386
+      ],
+      "tags": [
+        "重金屬",
+        "前衛搖滾",
+        "唱片行"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "專攻重金屬與前衛搖滾的傳奇店家，牆上掛滿海報，是台灣金屬頭、搖滾迷的資訊交換站。",
+      "is_canary": false,
+      "address": "台北市中正區忠孝西路一段72號B1",
+      "opening_hours": "13:00–21:00",
+      "minimum_charge": "商品零售，CD/服飾約 NT$500 起",
+      "phone": "02-2311-5077"
+    },
+    {
+      "id": "venue060-070",
+      "name": "育典樂器 UD Music",
+      "coordinates": [
+        121.53949357396546,
+        25.02621108188709
+      ],
+      "tags": [
+        "吉他",
+        "精品樂器",
+        "樂器行"
+      ],
+      "scenario": [
+        "約會"
+      ],
+      "original_review": "東區指標性樂器行，代理多款精品吉他與貝斯，店內陳列極具質感，是樂手升級裝備的首選。",
+      "is_canary": false,
+      "address": "台北市大安區光復南路290巷5號1樓",
+      "opening_hours": "13:00–21:00",
+      "minimum_charge": "精品樂器販售，價格依品牌而定",
+      "phone": "02-2721-3202"
+    },
+    {
+      "id": "final-072",
+      "name": "FINAL",
+      "coordinates": [
+        121.5413965513775,
+        25.024845662674867
+      ],
+      "tags": [
+        "解構電子",
+        "Techno",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋"
+      ],
+      "original_review": "台北最具前衛性格的地下舞廳，音樂風格橫跨工業、碎拍與解構電子，是小眾電音愛好者的樂土。",
+      "is_canary": false,
+      "address": "台北市大安區復興南路一段249號B1",
+      "opening_hours": "23:00–04:00（僅週末營業）",
+      "minimum_charge": "門票制約 NT$400-600（含飲料）",
+      "phone": ""
+    },
+    {
+      "id": "studio9-074",
+      "name": "Studio 9",
+      "coordinates": [
+        121.49892656214963,
+        25.032590642735528
+      ],
+      "tags": [
+        "House",
+        "Techno",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "結合露台景觀與高品質音響的電子音樂空間，強調聽覺品質，常邀請國內外知名 DJ 駐場。",
+      "is_canary": false,
+      "address": "台北市萬華區西寧南路177號9樓",
+      "opening_hours": "依派對時間而定，多為週五、六深夜",
+      "minimum_charge": "門票 NT$500-800",
+      "phone": "02-2371-3333"
+    },
+    {
+      "id": "venue066-076",
+      "name": "爛調唱片 Rotten Blues",
+      "coordinates": [
+        121.49528263137398,
+        25.03445241756281
+      ],
+      "tags": [
+        "藍調",
+        "另類",
+        "黑膠唱片行"
+      ],
+      "scenario": [
+        "適合一個人"
+      ],
+      "original_review": "店如其名，專注於地下藍調、另類搖滾與各種被主流邊緣化的獨特聲響，充滿個性的小店。",
+      "is_canary": false,
+      "address": "台北市萬華區漢口街二段54號2樓",
+      "opening_hours": "14:00–20:00（不定期公休）",
+      "minimum_charge": "商品零售，黑膠約 NT$400 起",
+      "phone": ""
+    },
+    {
+      "id": "beansbeats-078",
+      "name": "Beans & Beats",
+      "coordinates": [
+        121.56011820181472,
+        25.0526300064208
+      ],
+      "tags": [
+        "嘻哈",
+        "靈魂",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "由顏社創立的嘻哈主題空間，一樓是咖啡廳，地下室是唱片與工作室，充滿嘻哈與街頭文化感。",
+      "is_canary": false,
+      "address": "台北市松山區富錦街346號",
+      "opening_hours": "13:00–19:00",
+      "minimum_charge": "低消 NT$150，唱片依定價",
+      "phone": "02-2765-5533"
+    },
+    {
+      "id": "vinyldecisiontmc-080",
+      "name": "Vinyl Decision @ TMC",
+      "coordinates": [
+        121.61135689115434,
+        25.051772407226625
+      ],
+      "tags": [
+        "西洋經典",
+        "爵士",
+        "黑膠唱片行"
+      ],
+      "scenario": [
+        "約會",
+        "演唱會",
+        "適合一個人"
+      ],
+      "original_review": "Vinyl Decision 位於北流的分店，將黑膠挖寶體驗帶入現代化場館，空間開闊且選品與總店不同。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流文化館2樓）",
+      "opening_hours": "11:00–18:00（週一公休）",
+      "minimum_charge": "自由參觀，黑膠販售為主",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "venue072-082",
+      "name": "誠品音樂館 松菸店",
+      "coordinates": [
+        121.56695860324541,
+        25.037200314864442
+      ],
+      "tags": [
+        "全曲風",
+        "主流與獨立",
+        "唱片行"
+      ],
+      "scenario": [
+        "挖寶",
+        "文藝"
+      ],
+      "original_review": "台北唯一的 24 小時唱片行（部分時段），收藏極廣，是深夜想買唱片、感受音樂靜謐感的聖地。",
+      "is_canary": false,
+      "address": "台北市信義區菸廠路88號3樓",
+      "opening_hours": "24小時營業（部分櫃位依商場）",
+      "minimum_charge": "自由參觀，商品按原價銷售",
+      "phone": "02-6636-5888"
+    },
+    {
+      "id": "oldiegoodie-084",
+      "name": "Oldie Goodie",
+      "coordinates": [
+        121.5483799439778,
+        25.02728706567311
+      ],
+      "tags": [
+        "經典搖滾",
+        "藍調",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "台北老牌現場音樂酒吧，專注於 Classic Rock、Blues 與 70-80 年代流行樂，氣氛歡樂穩定。",
+      "is_canary": false,
+      "address": "台北市大安區羅斯福路三段171號2樓",
+      "opening_hours": "20:00–01:00（週末至02:00）",
+      "minimum_charge": "低消 NT$400-600，依演出而定",
+      "phone": "02-2369-3686"
+    },
+    {
+      "id": "cornermax-086",
+      "name": "Corner Max",
+      "coordinates": [
+        121.54616225703481,
+        25.02868595983311
+      ],
+      "tags": [
+        "流行演出",
+        "獨立樂團",
+        "Live House"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "位於東區的全方位展演空間，擁有階梯式座位與平面舞池配置，是中小型音樂會與粉絲見面會的首選。",
+      "is_canary": false,
+      "address": "台北市大安區光復南路102號1樓",
+      "opening_hours": "依演出時間而定",
+      "minimum_charge": "門票制，依活動約 NT$800-2000",
+      "phone": "02-2721-5020"
+    },
+    {
+      "id": "kortaipei-088",
+      "name": "KOR Taipei",
+      "coordinates": [
+        121.54481144079621,
+        25.023918333738248
+      ],
+      "tags": [
+        "嘻哈",
+        "Funk",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "演唱會",
+        "精緻",
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "頂級的 Lounge Bar，配備專業聲學工程系統，雖然非 Live House 但其選樂品味在台北名列前茅。",
+      "is_canary": false,
+      "address": "台北市大安區忠孝東路四段201號5樓",
+      "opening_hours": "21:00–03:00（週末至04:30）",
+      "minimum_charge": "平均消費 NT$1000 起，需提前預約",
+      "phone": "0966-331-033"
+    },
+    {
+      "id": "venue080-090",
+      "name": "金螞蟻樂器 Golden Ant",
+      "coordinates": [
+        121.51714312183124,
+        25.032079065022415
+      ],
+      "tags": [
+        "吉他",
+        "貝斯",
+        "樂器行"
+      ],
+      "scenario": [
+        "平價"
+      ],
+      "original_review": "位於新生南路的樂器老字號，吉他與貝斯調整服務極佳，價格公道，是許多台北學生樂手的第一間店。",
+      "is_canary": false,
+      "address": "台北市中正區忠孝東路二段121巷11號",
+      "opening_hours": "11:00–21:30",
+      "minimum_charge": "樂器零售與維修，依項目報價",
+      "phone": "02-2357-6719"
+    },
+    {
+      "id": "smexy-092",
+      "name": "Smexy",
+      "coordinates": [
+        121.53599688477942,
+        25.062828457923853
+      ],
+      "tags": [
+        "R&B",
+        "Soul",
+        "音樂餐廳"
+      ],
+      "scenario": [
+        "約會",
+        "一群人瘋"
+      ],
+      "original_review": "高質感的 Live Music 餐廳，每晚皆有歌手駐唱，曲風多為 R&B、Jazz 與 Soul，適合邊餐飲邊欣賞。",
+      "is_canary": false,
+      "address": "台北市中山區民生東路三段131號B1",
+      "opening_hours": "11:30–00:00（週末至01:00）",
+      "minimum_charge": "平均消費 NT$800-1200",
+      "phone": "02-2717-6626"
+    },
+    {
+      "id": "venue084-094",
+      "name": "海國樂器 Sea Sound Music",
+      "coordinates": [
+        121.5215891850972,
+        25.035478837596273
+      ],
+      "tags": [
+        "吉他",
+        "專業音響",
+        "樂器行"
+      ],
+      "scenario": [
+        "精緻"
+      ],
+      "original_review": "代理知名品牌 Fender 的專業店面，提供最完整的吉他牆與頂級音箱試彈，樂迷的精品旗艦店。",
+      "is_canary": false,
+      "address": "台北市中正區仁愛路一段24號",
+      "opening_hours": "11:00–21:00",
+      "minimum_charge": "樂器零售，提供 Fender 系列精品",
+      "phone": "02-2393-7936"
+    },
+    {
+      "id": "venue086-096",
+      "name": "窖父 HideOut",
+      "coordinates": [
+        121.53962486794613,
+        25.02446671441603
+      ],
+      "tags": [
+        "獨立音樂",
+        "學生友善",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "深受年輕人喜愛的地下音樂酒吧，DJ 選樂以獨立音樂為主，不定期有小型 Unplugged 演出。",
+      "is_canary": false,
+      "address": "台北市大安區和平東路二段96巷15號",
+      "opening_hours": "20:00–02:00",
+      "minimum_charge": "低消一杯飲料約 NT$300",
+      "phone": "02-2738-9667"
+    },
+    {
+      "id": "bobwundaye鮑伯問代-098",
+      "name": "Bobwundaye 鮑伯問代",
+      "coordinates": [
+        121.54006056027045,
+        25.023743938153196
+      ],
+      "tags": [
+        "搖滾",
+        "藍調",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋"
+      ],
+      "original_review": "極具人情味的音樂酒吧，週三有 Open Jam 活動，週五、六則有各種風格的 Live Band 演出。",
+      "is_canary": false,
+      "address": "台北市大安區和平東路三段208之1號",
+      "opening_hours": "19:00–01:00（週末至02:00）",
+      "minimum_charge": "低消一杯飲料約 NT$300",
+      "phone": "02-2377-1772"
+    },
+    {
+      "id": "venue090-100",
+      "name": "浮光書店 Illumination Books",
+      "coordinates": [
+        121.53676525444001,
+        25.066059664822255
+      ],
+      "tags": [
+        "安靜氛圍",
+        "實驗",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "精緻",
+        "適合一個人",
+        "文藝"
+      ],
+      "original_review": "結合書店、咖啡與極佳聽覺體驗的老宅空間，店內選樂多為環境、民謠與古典，氣氛安靜迷人。",
+      "is_canary": false,
+      "address": "台北市中山區赤峰街47巷16號2樓",
+      "opening_hours": "12:00–22:00",
+      "minimum_charge": "低消一杯飲料約 NT$180",
+      "phone": "02-2550-7288"
+    },
+    {
+      "id": "vdcoffeevinyldecisio-102",
+      "name": "VD COFFEE (Vinyl Decision Cafe)",
+      "coordinates": [
+        121.50123056920609,
+        25.03349439447206
+      ],
+      "tags": [
+        "西洋金曲",
+        "精品咖啡",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "適合一個人"
+      ],
+      "original_review": "西門町鬧區中的綠洲，將黑膠元素完美融入工業風咖啡廳，提供專業濾掛與音樂沉浸式體驗。",
+      "is_canary": false,
+      "address": "台北市萬華區漢中街26號",
+      "opening_hours": "11:00–19:00",
+      "minimum_charge": "低消一杯飲料約 NT$150",
+      "phone": "02-2388-8912"
+    },
+    {
+      "id": "venue094-104",
+      "name": "大韜黑膠耳機專賣店 (Jim Vinyl)",
+      "coordinates": [
+        121.60312046073523,
+        25.05456874558704
+      ],
+      "tags": [
+        "黑膠唱片",
+        "Hi-Fi 耳機",
+        "唱片行"
+      ],
+      "scenario": [
+        "精緻",
+        "適合一個人"
+      ],
+      "original_review": "位於北流，是目前台灣規模最大的黑膠實體店之一，並結合頂級耳機試聽，視聽設備一站式購足。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流產業區）",
+      "opening_hours": "11:00–20:00（週一公休）",
+      "minimum_charge": "自由參觀，黑膠/耳機零售",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "venue096-106",
+      "name": "聲化感官實驗室 Sonique Lab",
+      "coordinates": [
+        121.60601837595377,
+        25.05436801393224
+      ],
+      "tags": [
+        "數位音樂",
+        "實驗電子",
+        "音樂空間"
+      ],
+      "scenario": [
+        "適合一個人"
+      ],
+      "original_review": "位於北流的聲學實驗空間，經常舉辦沉浸式音樂體驗與數位音樂工作坊，科技感十足。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流園區）",
+      "opening_hours": "依工作坊與活動時間而定",
+      "minimum_charge": "門票或報名費約 NT$300-1000",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "holdondraft-108",
+      "name": "Hold on Draft",
+      "coordinates": [
+        121.6019512812903,
+        25.05594131050943
+      ],
+      "tags": [
+        "派對音樂",
+        "精釀",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋"
+      ],
+      "original_review": "北流園區內的精釀啤酒音樂站，將音樂節的 Chill 感帶入日常，常配合演出舉辦 DJ 限定活動。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流園區）",
+      "opening_hours": "15:00–22:00（週末延長）",
+      "minimum_charge": "單杯精釀約 NT$250-350",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "chottosakebar-110",
+      "name": "Chotto Sake Bar",
+      "coordinates": [
+        121.60320710930334,
+        25.054814949283823
+      ],
+      "tags": [
+        "日系流行",
+        "Chill",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "結合日式清酒與流行音樂的小酒吧，位於北流創意區，是看展後討論音樂、微醺的最佳場所。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流園區）",
+      "opening_hours": "18:00–00:00",
+      "minimum_charge": "平均消費 NT$500-800",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "venue102-112",
+      "name": "有木友咖啡吧",
+      "coordinates": [
+        121.50391293079733,
+        25.13109592281516
+      ],
+      "tags": [
+        "饒舌",
+        "彈唱",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "北投區少見的文青音樂空間，提供歌手彈唱 Open Mic 與饒舌對戰，氛圍極其放鬆且具在地特色。",
+      "is_canary": false,
+      "address": "台北市北投區中央南路一段190號2樓",
+      "opening_hours": "14:00–00:00",
+      "minimum_charge": "低消 NT$150，Open Mic 酌收場地費",
+      "phone": "0924-066-908"
+    },
+    {
+      "id": "venue104-114",
+      "name": "桑兔 Sound Rabbit",
+      "coordinates": [
+        121.52006662528377,
+        25.036375175430674
+      ],
+      "tags": [
+        "錄音器材",
+        "效果器",
+        "樂器行"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "專業的音樂設備採購站，主打樂器效果器、麥克風與專業錄音器材，深受製作人與樂手信賴。",
+      "is_canary": false,
+      "address": "台北市中正區忠孝東路二段39巷2弄10號",
+      "opening_hours": "13:00–20:00",
+      "minimum_charge": "錄音與樂器器材零售",
+      "phone": "02-2396-0158"
+    },
+    {
+      "id": "venue106-116",
+      "name": "現代樂器 Modern Music",
+      "coordinates": [
+        121.51776610389464,
+        25.03666922752228
+      ],
+      "tags": [
+        "民謠吉他",
+        "樂器行",
+        "教學"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "位於公館商圈的資深樂器行，除了齊全的吉他品牌，也提供優質的初學教學課程與樂器調教。",
+      "is_canary": false,
+      "address": "台北市中正區羅斯福路三段150號",
+      "opening_hours": "10:30–22:00",
+      "minimum_charge": "樂器零售，平均消費 NT$3000 起",
+      "phone": "02-2365-2233"
+    },
+    {
+      "id": "venue108-118",
+      "name": "搖滾玩家樂器 Rock Player",
+      "coordinates": [
+        121.51668397515155,
+        25.066161772831794
+      ],
+      "tags": [
+        "電吉他",
+        "搖滾",
+        "樂器行"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "專注於電吉他與重金屬裝備的店家，店內充滿搖滾傳奇色彩，老闆對各種音色調整有獨到見解。",
+      "is_canary": false,
+      "address": "台北市大同區重慶北路三段138號",
+      "opening_hours": "13:00–21:00",
+      "minimum_charge": "專業維修與樂器零售",
+      "phone": "02-2591-6111"
+    },
+    {
+      "id": "venue110-120",
+      "name": "爵士樂器 Jazz Music",
+      "coordinates": [
+        121.51713254730213,
+        25.032561132666824
+      ],
+      "tags": [
+        "管樂",
+        "爵士",
+        "樂器行"
+      ],
+      "scenario": [
+        "約會"
+      ],
+      "original_review": "台北市管樂迷的朝聖地，專營薩克斯風、小號等管樂器維修與買賣，二樓有專業試音室。",
+      "is_canary": false,
+      "address": "台北市中正區南昌路二段103號",
+      "opening_hours": "10:00–20:00",
+      "minimum_charge": "管樂器維修與零售",
+      "phone": "02-2365-2223"
+    },
+    {
+      "id": "venue112-122",
+      "name": "聖心樂器",
+      "coordinates": [
+        121.56889053914546,
+        24.9951372654062
+      ],
+      "tags": [
+        "木吉他",
+        "配件",
+        "樂器行"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "位於文山區的社區型優質樂器行，服務親切，是木吉他保養與弦線更換的在地好幫手。",
+      "is_canary": false,
+      "address": "台北市文山區興隆路二段186號",
+      "opening_hours": "12:00–21:00",
+      "minimum_charge": "保養服務約 NT$500 起",
+      "phone": "02-2933-2223"
+    },
+    {
+      "id": "venue114-124",
+      "name": "功學社復興店 KHS Music",
+      "coordinates": [
+        121.54832307201927,
+        25.02424324356366
+      ],
+      "tags": [
+        "古典",
+        "鋼琴",
+        "樂器行"
+      ],
+      "scenario": [
+        "精緻"
+      ],
+      "original_review": "台北旗艦店，擁有最完整的鋼琴展示與管弦樂器專櫃，並具備大型音樂教室與演奏廳。",
+      "is_canary": false,
+      "address": "台北市大安區復興南路一段322號",
+      "opening_hours": "10:00–21:30",
+      "minimum_charge": "鋼琴/古典樂器零售",
+      "phone": "02-2709-1266"
+    },
+    {
+      "id": "venue116-126",
+      "name": "亞邁樂器台北店",
+      "coordinates": [
+        121.51694750560678,
+        25.034329630857968
+      ],
+      "tags": [
+        "電吉他",
+        "練團室",
+        "樂器行"
+      ],
+      "scenario": [
+        "演唱會",
+        "一群人瘋"
+      ],
+      "original_review": "全方位的音樂服務中心，練團室環境極佳，並設有小型 Live 舞台，常舉辦免費樂器講座。",
+      "is_canary": false,
+      "address": "台北市中正區忠孝東路二段46號",
+      "opening_hours": "12:00–22:00",
+      "minimum_charge": "練團費 NT$400-600/hr",
+      "phone": "02-2393-1260"
+    },
+    {
+      "id": "triangle-128",
+      "name": "Triangle",
+      "coordinates": [
+        121.53338273372037,
+        25.06443269193033
+      ],
+      "tags": [
+        "Funk",
+        "嘻哈",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋",
+        "文藝"
+      ],
+      "original_review": "位於圓山花博園區，半露天的地下室氛圍，電子與黑人音樂選樂出色，每週末皆有不同主題派對。",
+      "is_canary": false,
+      "address": "台北市中山區玉門街1號（花博集食行樂內）",
+      "opening_hours": "20:00–02:00（週末至04:00）",
+      "minimum_charge": "門票 NT$300-500（含飲料）",
+      "phone": "02-2594-9990"
+    },
+    {
+      "id": "wonderbar-130",
+      "name": "Wonder Bar",
+      "coordinates": [
+        121.52898248073163,
+        25.064202119919376
+      ],
+      "tags": [
+        "流行舞曲",
+        "電音",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋"
+      ],
+      "original_review": "台北指標性的 LGBTQ+ 音樂酒吧，音樂風格橫跨流行 Diva 到電子，氣氛狂放且充滿愛。",
+      "is_canary": false,
+      "address": "台北市中山區復興南路一段107巷5弄30號",
+      "opening_hours": "21:00–03:00",
+      "minimum_charge": "平均消費 NT$600-900",
+      "phone": "02-2711-2000"
+    },
+    {
+      "id": "fairytaipei-132",
+      "name": "Fairy Taipei",
+      "coordinates": [
+        121.54144177354341,
+        25.026797658126092
+      ],
+      "tags": [
+        "Lounge",
+        "都會",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "位於東區的老宅音樂酒吧，以異國風情裝潢著稱，週末 DJ 選樂極具水準，是城市獵奇音樂愛好者的首選。",
+      "is_canary": false,
+      "address": "台北市大安區光復南路308巷51號",
+      "opening_hours": "18:00–01:00（週末至03:00）",
+      "minimum_charge": "低消一杯飲料 NT$400",
+      "phone": "02-2741-8852"
+    },
+    {
+      "id": "gstarclub-134",
+      "name": "G*star Club",
+      "coordinates": [
+        121.52974937771089,
+        25.064975902719645
+      ],
+      "tags": [
+        "K-Pop",
+        "流行舞曲",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "一群人瘋"
+      ],
+      "original_review": "台北傳奇的流行舞曲俱樂部，主打 K-Pop、流行 Remix，燈光與音響系統專為熱舞設計。",
+      "is_canary": false,
+      "address": "台北市中山區龍江路23號B1",
+      "opening_hours": "22:00–04:00",
+      "minimum_charge": "門票約 NT$600-800（無限暢飲或含飲料）",
+      "phone": "02-2721-8311"
+    },
+    {
+      "id": "taboo-136",
+      "name": "Taboo",
+      "coordinates": [
+        121.52988563268855,
+        25.06229766932858
+      ],
+      "tags": [
+        "流行",
+        "電子",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "台北知名的女性專屬（及其友善者）音樂酒吧，音樂節奏感強，常舉辦不同曲風的主題之夜。",
+      "is_canary": false,
+      "address": "台北市中山區建國北路二段90號B1",
+      "opening_hours": "22:00–04:00",
+      "minimum_charge": "門票 NT$400-600",
+      "phone": "02-2518-1119"
+    },
+    {
+      "id": "minglebar-138",
+      "name": "Mingle Bar",
+      "coordinates": [
+        121.5319180367051,
+        25.060937697530814
+      ],
+      "tags": [
+        "Lofi",
+        "嘻哈",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "約會"
+      ],
+      "original_review": "中山區精緻的小型音樂酒吧，音樂風格偏向 Lofi-Hip Hop 與 Nu-Jazz，適合深夜低聲談心。",
+      "is_canary": false,
+      "address": "台北市中山區南京東路一段132巷15號1樓",
+      "opening_hours": "19:00–02:00",
+      "minimum_charge": "低消一杯飲料 NT$350",
+      "phone": "02-2521-1234"
+    },
+    {
+      "id": "thepublichouse-140",
+      "name": "The Public House",
+      "coordinates": [
+        121.53970350744207,
+        25.029539469596674
+      ],
+      "tags": [
+        "英倫搖滾",
+        "都會",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "英式經典酒吧，雖然主打調酒，但背景音樂品味極佳，深受音樂產業人士喜愛聚會之處。",
+      "is_canary": false,
+      "address": "台北市大安區信義路四段143號",
+      "opening_hours": "19:00–02:00",
+      "minimum_charge": "平均消費 NT$800-1200",
+      "phone": "02-2701-0553"
+    },
+    {
+      "id": "venue132-142",
+      "name": "窖床音樂 BAR",
+      "coordinates": [
+        121.49693707344757,
+        25.034028780853717
+      ],
+      "tags": [
+        "藍調",
+        "民謠",
+        "音樂酒吧"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "西門町充滿波希米亞風格的音樂酒吧，不定期舉辦 Jam Session，氛圍隨性自由。",
+      "is_canary": false,
+      "address": "台北市萬華區漢中街26號",
+      "opening_hours": "19:00–02:00",
+      "minimum_charge": "低消約 NT$300",
+      "phone": "02-2388-8912"
+    },
+    {
+      "id": "venue134-144",
+      "name": "雅譜音響 Audiophile Music",
+      "coordinates": [
+        121.54725198402484,
+        25.026769968239286
+      ],
+      "tags": [
+        "發燒音響",
+        "古典",
+        "唱片行"
+      ],
+      "scenario": [
+        "約會",
+        "精緻"
+      ],
+      "original_review": "專注於頂級視聽體驗的店家，除了販售高端音響，亦有精選古典與爵士發燒片，是音色發燒友的聖地。",
+      "is_canary": false,
+      "address": "台北市大安區和平東路二段10號",
+      "opening_hours": "12:00–20:00",
+      "minimum_charge": "自由參觀，發燒唱片約 NT$800 起",
+      "phone": "02-2363-2222"
+    },
+    {
+      "id": "venue136-146",
+      "name": "凱恩樂器",
+      "coordinates": [
+        121.50108011655406,
+        25.03320375988318
+      ],
+      "tags": [
+        "合成器",
+        "數位鋼琴",
+        "樂器行"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "主打數位鋼琴與電子合成器的專業店面，提供各大品牌試奏，是電子音樂製作初學者的寶庫。",
+      "is_canary": false,
+      "address": "台北市萬華區漢口街二段54-4號",
+      "opening_hours": "11:00–21:00",
+      "minimum_charge": "數位鋼琴零售，依型號定價",
+      "phone": "02-2381-1111"
+    },
+    {
+      "id": "venue138-148",
+      "name": "五大唱片 西門店",
+      "coordinates": [
+        121.49627425657333,
+        25.03365581620679
+      ],
+      "tags": [
+        "K-Pop",
+        "華語流行",
+        "唱片行"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "大眾化實體唱片行的代表，韓流、華語、東洋流行樂最速到貨，是追星族的必經之地。",
+      "is_canary": false,
+      "address": "台北市萬華區西寧南路58號",
+      "opening_hours": "12:00–22:00",
+      "minimum_charge": "商品零售，依唱片定價",
+      "phone": "02-2382-5555"
+    },
+    {
+      "id": "camelrecords駱克唱片-150",
+      "name": "Camel Records 駱克唱片",
+      "coordinates": [
+        121.52885123576873,
+        25.064888536659844
+      ],
+      "tags": [
+        "經典搖滾",
+        "黑膠唱片行"
+      ],
+      "scenario": [
+        "適合一個人"
+      ],
+      "original_review": "隱身在中山區的專業黑膠店，選品以 60-80 年代搖滾與前衛音樂為主，品味犀利。",
+      "is_canary": false,
+      "address": "台北市中山區南京東路三段216巷4號",
+      "opening_hours": "14:00–20:00",
+      "minimum_charge": "自由參觀，黑膠約 NT$400 起",
+      "phone": "02-2751-1111"
+    },
+    {
+      "id": "venue142-152",
+      "name": "澤龍唱片 Music House",
+      "coordinates": [
+        121.49599241085384,
+        25.0367813927974
+      ],
+      "tags": [
+        "古典",
+        "電影配樂",
+        "唱片行"
+      ],
+      "scenario": [
+        "精緻"
+      ],
+      "original_review": "萬華老派唱片行，專精於古典、歌劇與懷舊電影配樂，是許多資深樂迷挖掘珍稀老盤的秘密據點。",
+      "is_canary": false,
+      "address": "台北市萬華區漢口街一段80巷12號",
+      "opening_hours": "11:00–19:00",
+      "minimum_charge": "商品零售，依版本報價",
+      "phone": "02-2311-6666"
+    },
+    {
+      "id": "venue144-154",
+      "name": "上揚唱片 Sunrise Records",
+      "coordinates": [
+        121.53345386403771,
+        25.066326434910057
+      ],
+      "tags": [
+        "古典",
+        "本土音樂",
+        "唱片行"
+      ],
+      "scenario": [
+        "精緻"
+      ],
+      "original_review": "台灣老字號古典音樂代理，位於老城區的門市充滿文藝氣息，是推廣本土創作與古典樂的重要基地。",
+      "is_canary": false,
+      "address": "台北市中山區中山北路二段77之4號",
+      "opening_hours": "10:00–18:00（週日公休）",
+      "minimum_charge": "商品零售，CD 約 NT$450 起",
+      "phone": "02-2531-1111"
+    },
+    {
+      "id": "waitingroomii-156",
+      "name": "Waiting Room II",
+      "coordinates": [
+        121.53186532988647,
+        25.064149994852528
+      ],
+      "tags": [
+        "實驗聲響",
+        "獨立藝術",
+        "音樂空間"
+      ],
+      "scenario": [
+        "演唱會",
+        "文藝"
+      ],
+      "original_review": "Waiting Room 的二店或延伸展演空間，常配合獨立刊物發行舉辦小型聲響實驗活動。",
+      "is_canary": false,
+      "address": "台北市中山區南京西路25巷18-1號",
+      "opening_hours": "依展覽與活動時間而定",
+      "minimum_charge": "自由參觀或門票制 NT$200",
+      "phone": "02-2523-6937"
+    },
+    {
+      "id": "tropocoffee-158",
+      "name": "Tropo Coffee",
+      "coordinates": [
+        121.56212999701033,
+        25.035442291886568
+      ],
+      "tags": [
+        "City Pop",
+        "黑膠",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "挖寶",
+        "適合一個人",
+        "文藝"
+      ],
+      "original_review": "充滿 80 年代摩登復古感的咖啡廳，店主收藏驚人的黑膠與音響，音樂多為 City Pop 與 Jazz Fusion。",
+      "is_canary": false,
+      "address": "台北市信義區嘉興街216巷12號",
+      "opening_hours": "12:00–19:00",
+      "minimum_charge": "低消一杯飲料約 NT$180",
+      "phone": "02-2733-1111"
+    },
+    {
+      "id": "yaboo鴉埠咖啡-160",
+      "name": "Yaboo 鴉埠咖啡",
+      "coordinates": [
+        121.54404316282776,
+        25.02671044451907
+      ],
+      "tags": [
+        "獨立音樂",
+        "文青感",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "永康街充滿傳奇色彩的深夜咖啡廳，選樂極具個性，是獨立音樂人與藝術創作者的靈感產地。",
+      "is_canary": false,
+      "address": "台北市大安區永康街41巷26號",
+      "opening_hours": "12:00–00:00",
+      "minimum_charge": "低消一杯飲料約 NT$150",
+      "phone": "02-2391-2868"
+    },
+    {
+      "id": "venue152-162",
+      "name": "幻猻家珈琲 Pallas Café",
+      "coordinates": [
+        121.5134951446224,
+        25.065971914500697
+      ],
+      "tags": [
+        "老宅",
+        "黑膠",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "約會",
+        "適合一個人",
+        "文藝"
+      ],
+      "original_review": "位於大稻埕老屋，店內黑膠唱機持續運轉，選樂優雅且帶有歷史厚度，將音樂融入懷舊生活。",
+      "is_canary": false,
+      "address": "台北市大同區迪化街一段14巷14號",
+      "opening_hours": "10:00–18:00",
+      "minimum_charge": "低消一杯飲料約 NT$180",
+      "phone": "02-2555-6680"
+    },
+    {
+      "id": "venue154-164",
+      "name": "春秋書店",
+      "coordinates": [
+        121.53693356852308,
+        25.06435231409782
+      ],
+      "tags": [
+        "古典",
+        "室內樂",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "精緻",
+        "適合一個人",
+        "文藝"
+      ],
+      "original_review": "赤峰街四層樓老宅書店，充滿歐洲古堡感，每一層樓都有精選背景音樂，是極佳的聽覺閱讀空間。",
+      "is_canary": false,
+      "address": "台北市中山區赤峰街41巷7號",
+      "opening_hours": "12:00–22:00",
+      "minimum_charge": "低消一杯飲料約 NT$200",
+      "phone": "02-2559-1111"
+    },
+    {
+      "id": "venue156-166",
+      "name": "聞山咖啡 景美店",
+      "coordinates": [
+        121.57028593249768,
+        24.993864098055123
+      ],
+      "tags": [
+        "人文氛圍",
+        "慢活",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "40年老字號咖啡廳，小說《傷心咖啡店之歌》的原型地，音樂氛圍沉穩，是台北文青音樂史的一環。",
+      "is_canary": false,
+      "address": "台北市文山區景中街19號",
+      "opening_hours": "13:00–22:00",
+      "minimum_charge": "低消一杯飲料約 NT$160",
+      "phone": "02-2933-1111"
+    },
+    {
+      "id": "venue158-168",
+      "name": "德佈 Debut Cafe",
+      "coordinates": [
+        121.51548674358473,
+        25.03327538664281
+      ],
+      "tags": [
+        "黑膠",
+        "古物",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "挖寶",
+        "精緻",
+        "適合一個人"
+      ],
+      "original_review": "古物收藏愛好者的基地，店主對古典與黑膠音質極為講究，是一個可以安靜享受純粹音樂的場所。",
+      "is_canary": false,
+      "address": "台北市中正區新生南路一段68號",
+      "opening_hours": "13:00–21:00",
+      "minimum_charge": "低消一杯飲料約 NT$200",
+      "phone": "02-2341-7977"
+    },
+    {
+      "id": "venue160-170",
+      "name": "摩德年代 Modism Cafe",
+      "coordinates": [
+        121.52049027296056,
+        25.092946418368076
+      ],
+      "tags": [
+        "爵士",
+        "藍調",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "約會",
+        "文藝"
+      ],
+      "original_review": "天母地區極具英倫氛圍的店，晚上變身為音樂酒吧感，選樂偏向藍調與爵士，品味內斂。",
+      "is_canary": false,
+      "address": "台北市士林區中正路235巷29號",
+      "opening_hours": "12:00–00:00",
+      "minimum_charge": "平均消費 NT$300-500",
+      "phone": "02-2883-7012"
+    },
+    {
+      "id": "takeyourtimecaf-172",
+      "name": "Take Your Time Café",
+      "coordinates": [
+        121.60616469376039,
+        25.05694089542976
+      ],
+      "tags": [
+        "流行文化",
+        "放鬆",
+        "音樂咖啡廳"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "北流園區內的複合式空間，將音樂展覽與精品咖啡結合，經常播放當期北流策展的相關專題音樂。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號（北流園區）",
+      "opening_hours": "11:00–19:00",
+      "minimum_charge": "低消約 NT$150",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "venue164-174",
+      "name": "台北流行音樂中心 文化館",
+      "coordinates": [
+        121.6063740968435,
+        25.055447882392592
+      ],
+      "tags": [
+        "音樂史",
+        "互動體驗",
+        "展覽空間"
+      ],
+      "scenario": [
+        "文藝"
+      ],
+      "original_review": "台灣首座以流行音樂為主題的博物館，常設展「唱我們的歌」結合耳機與音樂體驗，極具教育與感官價值。",
+      "is_canary": false,
+      "address": "台北市南港區忠孝東路七段99號",
+      "opening_hours": "10:00–18:00（週一公休）",
+      "minimum_charge": "門票制，常設展 NT$350",
+      "phone": "02-2788-6620"
+    },
+    {
+      "id": "ez5-live-house-088",
+      "name": "EZ5 Live House",
+      "coordinates": [
+        121.5440368235024,
+        25.02742667205011
+      ],
+      "tags": [
+        "華語流行",
+        "實力派駐唱",
+        "Live House"
+      ],
+      "scenario": [
+        "約會",
+        "精緻"
+      ],
+      "original_review": "台北最具傳奇色彩的音樂酒吧，1991年開業至今，孕育無數實力派唱將，是近距離體驗華語流行唱功的指標性場域。",
+      "is_canary": false,
+      "address": "台北市大安區安和路二段211號",
+      "opening_hours": "20:00–01:30",
+      "minimum_charge": "門票制（含飲品與點心兌換），平均 NT$800 - NT$900",
+      "phone": "02-2738-3995"
+    },
+    {
       "id": "canary-jazz-spot-999",
       "name": "Midnight Groove",
-      "coordinates": [121.5123, 25.0289],
-      "tags": ["Jazz", "Experimental"],
-      "scenario": ["深夜", "秘密"],
+      "coordinates": [
+        121.5123,
+        25.0289
+      ],
+      "tags": [
+        "Jazz",
+        "Experimental"
+      ],
+      "scenario": [
+        "深夜",
+        "秘密"
+      ],
       "original_review": "藏在巷弄深處的實驗性 Jazz Bar，只有真正的行家才知道。",
       "is_canary": true,
       "address": "台北市大安區敦化南路二段99巷1號B2",
