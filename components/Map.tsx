@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useCallback, useState, useMemo, useRef, useEffect } from 'react';
-import MapGL, { Marker, Popup, NavigationControl, MapRef } from 'react-map-gl/maplibre';
+import MapGL, { Marker, Popup, NavigationControl, GeolocateControl, MapRef } from 'react-map-gl/maplibre';
 import Supercluster from 'supercluster';
 import { Venue } from '@/types/venue';
 import ClusterMarker from './ClusterMarker';
@@ -342,8 +342,19 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
           </Popup>
         )}
 
+        {/* 地圖控制工具 */}
         <div className="absolute top-4 right-4">
           <NavigationControl showCompass={false} />
+        </div>
+
+        {/* 定位控制（顯示藍色圓點） */}
+        <div className="absolute bottom-4 right-4">
+          <GeolocateControl
+            positionOptions={{ enableHighAccuracy: true }}
+            trackUserLocation={true}
+            showUserLocation={true}
+            showAccuracyCircle={true}
+          />
         </div>
       </MapGL>
     </div>
