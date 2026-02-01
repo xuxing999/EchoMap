@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { VenueFilter } from '@/types/venue';
+import { trackFilterChange } from '@/lib/analytics';
 
 interface FilterPanelProps {
   filter: VenueFilter;
@@ -17,9 +18,17 @@ const SCENARIO_TAGS = ['適合一個人', '一群人瘋', '約會', '平價', '�
 export default function FilterPanel({ filter, onFilterChange }: FilterPanelProps) {
   const toggleTag = (tag: string, type: 'tags' | 'scenario') => {
     const currentTags = filter[type] || [];
-    const newTags = currentTags.includes(tag)
+    const isRemoving = currentTags.includes(tag);
+    const newTags = isRemoving
       ? currentTags.filter(t => t !== tag)
       : [...currentTags, tag];
+
+    // 追蹤篩選器變更
+    trackFilterChange({
+      category: type,
+      value: tag,
+      action: isRemoving ? 'remove' : 'add',
+    });
 
     onFilterChange({
       ...filter,

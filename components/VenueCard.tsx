@@ -2,16 +2,27 @@
 
 import React from 'react';
 import { Venue } from '@/types/venue';
+import { trackVenueClick } from '@/lib/analytics';
 
 interface VenueCardProps {
   venue: Venue;
   onClick?: () => void;
   isSelected?: boolean;
+  source?: 'list' | 'bottomsheet'; // 追蹤點擊來源
 }
 
-export default function VenueCard({ venue, onClick, isSelected }: VenueCardProps) {
+export default function VenueCard({ venue, onClick, isSelected, source = 'list' }: VenueCardProps) {
   const handleClick = (e: React.MouseEvent | React.TouchEvent) => {
     e.stopPropagation();
+
+    // 追蹤場地卡片點擊
+    trackVenueClick({
+      name: venue.name,
+      id: venue.id,
+      tags: venue.tags,
+      source: source,
+    });
+
     onClick?.();
   };
 

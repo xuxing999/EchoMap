@@ -11,6 +11,7 @@ import {
   calculateBounds,
   calculateSpiderfyPositions,
 } from '@/lib/map-utils';
+import { trackVenueClick, trackClusterClick } from '@/lib/analytics';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 interface MapProps {
@@ -135,6 +136,13 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
         const leaves = supercluster.getLeaves(clusterId, Infinity);
         const clusterVenues = leaves.map((leaf: any) => leaf.properties.venue);
 
+        // 追蹤聚合點展開事件
+        trackClusterClick({
+          pointCount: clusterVenues.length,
+          zoom: zoom,
+          action: 'spiderfy',
+        });
+
         // 展開 Spiderfy
         setSpiderfyInfo({
           venues: clusterVenues,
@@ -146,6 +154,16 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
           supercluster.getClusterExpansionZoom(clusterId),
           CLUSTER_OPTIONS.maxZoom
         );
+
+        // 獲取聚合點數量用於追蹤
+        const leaves = supercluster.getLeaves(clusterId, Infinity);
+
+        // 追蹤聚合點縮放事件
+        trackClusterClick({
+          pointCount: leaves.length,
+          zoom: zoom,
+          action: 'zoom',
+        });
 
         // 平滑縮放到聚合點
         mapRef.current?.flyTo({
@@ -164,6 +182,14 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
   // 處理單獨標記點擊
   const handleMarkerClick = useCallback(
     (venue: Venue) => {
+      // 追蹤場地點擊事件
+      trackVenueClick({
+        name: venue.name,
+        id: venue.id,
+        tags: venue.tags,
+        source: 'map',
+      });
+
       setPopupInfo(venue);
       onVenueClick?.(venue);
       setSpiderfyInfo(null); // 關閉 Spiderfy

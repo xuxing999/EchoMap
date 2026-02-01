@@ -268,6 +268,7 @@ export default function BottomSheet({
                 venue={venue}
                 onClick={() => onVenueClick(venue)}
                 isSelected={selectedVenue?.id === venue.id}
+                source="bottomsheet"
               />
             ))
           )}

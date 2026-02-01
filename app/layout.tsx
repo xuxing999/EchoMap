@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Noto_Sans_TC } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 const notoSansTC = Noto_Sans_TC({
@@ -54,6 +55,7 @@ export default function RootLayout({
     <html lang="zh-TW" suppressHydrationWarning>
       <body className={`${notoSansTC.variable} antialiased`} suppressHydrationWarning>
         {children}
+        <Analytics />
       </body>
     </html>
   );

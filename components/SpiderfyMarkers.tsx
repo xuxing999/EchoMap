@@ -3,6 +3,7 @@
 import React from 'react';
 import { Marker } from 'react-map-gl/maplibre';
 import { Venue } from '@/types/venue';
+import { trackVenueClick } from '@/lib/analytics';
 
 interface SpiderfyMarkersProps {
   venues: Venue[];
@@ -54,6 +55,13 @@ export default function SpiderfyMarkers({
             anchor="bottom"
             onClick={(e) => {
               e.originalEvent.stopPropagation();
+              // 追蹤 Spiderfy 展開後的場地點擊
+              trackVenueClick({
+                name: venue.name,
+                id: venue.id,
+                tags: venue.tags,
+                source: 'spiderfy',
+              });
               onVenueClick(venue);
             }}
           >
