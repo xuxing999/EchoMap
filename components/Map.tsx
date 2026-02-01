@@ -399,19 +399,16 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
         )}
 
         {/* 地圖控制工具 */}
-        <div className="absolute top-4 right-4">
-          <NavigationControl showCompass={false} />
-        </div>
+        <NavigationControl position="top-right" showCompass={false} />
 
         {/* 定位控制（顯示藍色圓點） */}
-        <div className="absolute bottom-4 right-4">
-          <GeolocateControl
-            positionOptions={{ enableHighAccuracy: true }}
-            trackUserLocation={true}
-            showUserLocation={true}
-            showAccuracyCircle={true}
-          />
-        </div>
+        <GeolocateControl
+          position="bottom-right"
+          positionOptions={{ enableHighAccuracy: true }}
+          trackUserLocation={true}
+          showUserLocation={true}
+          showAccuracyCircle={true}
+        />
       </MapGL>
     </div>
   );
