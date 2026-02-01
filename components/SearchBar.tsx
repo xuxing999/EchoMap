@@ -29,41 +29,9 @@ export default function SearchBar({ onSearch, placeholder = "搜尋店家、流�
 
   return (
     <form onSubmit={handleSubmit} className="w-full">
-      <div className="relative">
-        <input
-          type="text"
-          value={query}
-          onChange={handleChange}
-          placeholder={placeholder}
-          className="w-full px-4 sm:px-6 py-2.5 pr-16 sm:pr-20 bg-white/90 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all hover:bg-white text-base"
-          style={{ fontSize: '16px' }}
-        />
-        {query && (
-          <button
-            type="button"
-            onClick={handleClear}
-            className="absolute right-10 sm:right-12 top-1/2 -translate-y-1/2 text-gray-400 hover:text-accent transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-            aria-label="清除搜尋"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        )}
-        <button
-          type="submit"
-          className="absolute right-0 sm:right-1 top-1/2 -translate-y-1/2 text-accent hover:text-accent-dark transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-          aria-label="搜尋"
-        >
+      <div className="relative flex items-center">
+        {/* 搜尋圖示（左側） */}
+        <div className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -76,7 +44,40 @@ export default function SearchBar({ onSearch, placeholder = "搜尋店家、流�
               clipRule="evenodd"
             />
           </svg>
-        </button>
+        </div>
+
+        {/* 搜尋輸入框 */}
+        <input
+          type="text"
+          value={query}
+          onChange={handleChange}
+          placeholder={placeholder}
+          className="w-full pl-10 sm:pl-12 pr-12 py-3 bg-white/90 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all hover:bg-white text-sm sm:text-base"
+          style={{ fontSize: '16px' }}
+        />
+
+        {/* 清除按鈕（右側，當有輸入時顯示） */}
+        {query && (
+          <button
+            type="button"
+            onClick={handleClear}
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-accent transition-colors p-2 rounded-full hover:bg-gray-100"
+            aria-label="清除搜尋"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+        )}
       </div>
     </form>
   );

@@ -154,7 +154,7 @@ export default function BottomSheet({
       {/* 底部抽屜 */}
       <div
         ref={sheetRef}
-        className="fixed left-0 right-0 bottom-0 bg-white rounded-t-3xl shadow-2xl z-50 md:hidden transition-transform duration-300 ease-out flex flex-col"
+        className="fixed left-0 right-0 bottom-0 bg-white rounded-t-3xl shadow-2xl z-[100] md:hidden transition-transform duration-300 ease-out flex flex-col"
         style={{
           transform: getSheetTransform(),
           maxHeight: '90vh',
@@ -163,7 +163,7 @@ export default function BottomSheet({
         }}
       >
         {/* Sticky 頂部區域：拖曳手把 + 搜尋欄 + 篩選按鈕 */}
-        <div className="sticky top-0 z-10 bg-white/95 backdrop-blur-md border-b border-gray-200/50">
+        <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b border-gray-200/50">
           {/* 拖曳手把 */}
           <div
             className="flex flex-col items-center pt-3 pb-2"
@@ -178,17 +178,17 @@ export default function BottomSheet({
           </div>
 
           {/* 搜尋欄與篩選按鈕 */}
-          <div className="px-4 pb-3">
-            <div className="flex items-center gap-2">
+          <div className="px-3 sm:px-4 pb-3">
+            <div className="flex items-center gap-3">
               {/* 搜尋框 */}
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <SearchBar onSearch={onSearch} placeholder="搜尋店家、流派、場景..." />
               </div>
 
               {/* 篩選按鈕 */}
               <button
                 onClick={onFilterClick}
-                className="relative bg-white border border-gray-200 rounded-full p-3 hover:bg-gray-50 active:scale-95 transition-all min-h-[48px] min-w-[48px] flex items-center justify-center"
+                className="relative flex-shrink-0 bg-white border border-gray-200 rounded-full p-3 hover:bg-gray-50 active:scale-95 transition-all min-h-[48px] min-w-[48px] flex items-center justify-center shadow-sm"
                 aria-label="開啟篩選"
                 type="button"
               >
