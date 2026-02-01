@@ -49,6 +49,17 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
     }
   }, [initialCenter]);
 
+  // 處理選中場所：當 selectedVenue 變化時自動對焦
+  useEffect(() => {
+    if (selectedVenue && mapRef.current) {
+      mapRef.current.flyTo({
+        center: [selectedVenue.coordinates[0], selectedVenue.coordinates[1]],
+        zoom: 16,
+        duration: 1400,
+      });
+    }
+  }, [selectedVenue]);
+
   const [popupInfo, setPopupInfo] = useState<Venue | null>(null);
   const [spiderfyInfo, setSpiderfyInfo] = useState<{
     venues: Venue[];
