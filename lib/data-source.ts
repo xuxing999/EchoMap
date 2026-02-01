@@ -7,8 +7,11 @@
  * - 所有資料存取都通過這個層級，便於維護和擴展
  */
 
-import { Venue, VenueFilter } from '@/types/venue';
+import { Venue, VenueFilter, VenueCollection } from '@/types/venue';
 import venuesData from '@/data/venues.json';
+
+// 類型斷言：確保 JSON 數據符合 VenueCollection 型別
+const typedVenuesData = venuesData as VenueCollection;
 
 /**
  * 資料源介面定義
@@ -30,7 +33,7 @@ class JSONVenueDataSource implements IVenueDataSource {
 
   constructor() {
     // 過濾掉金絲雀數據（防爬蟲標記）
-    this.venues = venuesData.venues.filter(v => !v.is_canary);
+    this.venues = typedVenuesData.venues.filter(v => !v.is_canary);
   }
 
   async getAllVenues(): Promise<Venue[]> {

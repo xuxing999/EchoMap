@@ -75,11 +75,13 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
   }, [venues]);
 
   // 根據當前視圖獲取聚合點與單獨標記
+  const mapBounds = mapRef.current?.getBounds();
+
   const { clusters, markers } = useMemo(() => {
     if (!supercluster) return { clusters: [], markers: [] };
 
     const zoom = Math.floor(viewState.zoom);
-    const bounds = mapRef.current?.getBounds();
+    const bounds = mapBounds;
 
     if (!bounds) {
       return { clusters: [], markers: [] };
@@ -120,7 +122,7 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
       clusters: clusterMarkers,
       markers: individualMarkers,
     };
-  }, [supercluster, viewState.zoom, mapRef.current?.getBounds()]);
+  }, [supercluster, viewState.zoom, mapBounds]);
 
   // 處理聚合點點擊（縮放或展開 Spiderfy）
   const handleClusterClick = useCallback(
