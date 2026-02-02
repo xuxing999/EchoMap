@@ -96,16 +96,26 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
     const zoom = Math.floor(viewState.zoom);
     const bounds = mapBounds;
 
+    // 如果 bounds 不存在，使用 viewState 計算一個大致的 bounds
+    let bbox: [number, number, number, number];
     if (!bounds) {
-      return { clusters: [], markers: [] };
+      // 根據當前縮放級別計算一個合理的視野範圍
+      const latOffset = 0.1 * (12 / zoom); // 根據縮放級別調整範圍
+      const lngOffset = 0.15 * (12 / zoom);
+      bbox = [
+        viewState.longitude - lngOffset,
+        viewState.latitude - latOffset,
+        viewState.longitude + lngOffset,
+        viewState.latitude + latOffset,
+      ];
+    } else {
+      bbox = [
+        bounds.getWest(),
+        bounds.getSouth(),
+        bounds.getEast(),
+        bounds.getNorth(),
+      ];
     }
-
-    const bbox: [number, number, number, number] = [
-      bounds.getWest(),
-      bounds.getSouth(),
-      bounds.getEast(),
-      bounds.getNorth(),
-    ];
 
     const clusterData = supercluster.getClusters(bbox, zoom);
 
@@ -135,7 +145,7 @@ export default function Map({ venues, onVenueClick, selectedVenue, initialCenter
       clusters: clusterMarkers,
       markers: individualMarkers,
     };
-  }, [supercluster, viewState.zoom, mapBounds]);
+  }, [supercluster, viewState.zoom, viewState.latitude, viewState.longitude, mapBounds]);
 
   // 處理聚合點點擊（縮放或展開 Spiderfy）
   const handleClusterClick = useCallback(
